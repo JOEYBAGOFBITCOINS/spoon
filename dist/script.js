@@ -185,7 +185,7 @@ class Renderer {
 		const cubeMap = gl.createTexture();
 		gl.bindTexture(gl.TEXTURE_CUBE_MAP, cubeMap);
 
-		const imgpath = "https://assets.codepen.io/4386748";
+		const imgpath = "./assets/cubemap";
 		const faces = [
 			[gl.TEXTURE_CUBE_MAP_POSITIVE_X, "02posx.jpg"],
 			[gl.TEXTURE_CUBE_MAP_NEGATIVE_X, "02negx.jpg"],
@@ -225,7 +225,7 @@ class Renderer {
 	}
 	loadTexture() {
 		const url =
-			"https://assets.codepen.io/4386748/Wood.jpg?width=2048&height=2048&format=auto";
+			"./assets/textures/Wood.jpg";
 		const { gl } = this;
 		const texture = gl.createTexture();
 		gl.bindTexture(gl.TEXTURE_2D, texture);
